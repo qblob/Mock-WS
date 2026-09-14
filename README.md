@@ -30,9 +30,7 @@ Mock WebSocket
  FastAPI / Django
 ```
 
-WorkerA receives market updates and publishes structured JSON messages to Redis. WorkerB asynchronously consumes those messages and stores them transactionally in MySQL.
-
-The real market data source was not used because the developer does not have a personal account on the broker's website. Therefore, a local WebSocket mock is used to provide realistic market-data events and keep the complete pipeline runnable and testable.
+WorkerA receives market updates and publishes structured JSON messages to Redis. WorkerB asynchronously consumes those messages and stores them transactionally in MySQL. A local WebSocket mock is used to provide realistic market-data events and keep the complete pipeline runnable and testable.
 
 ## Setup
 
